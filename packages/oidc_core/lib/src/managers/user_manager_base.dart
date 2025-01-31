@@ -757,8 +757,7 @@ abstract class OidcUserManagerBase {
       headers: settings.extraTokenHeaders,
       request: OidcTokenRequest.refreshToken(
         refreshToken: refreshToken,
-        clientId: clientCredentials.clientId,
-        clientSecret: clientCredentials.clientSecret,
+        clientId: clientCredentials.clientId,        
         extra: settings.extraTokenParameters,
         scope: settings.scope,
       ),
@@ -818,8 +817,7 @@ abstract class OidcUserManagerBase {
         headers: settings.extraTokenHeaders,
         request: OidcTokenRequest.refreshToken(
           refreshToken: refreshToken,
-          clientId: clientCredentials.clientId,
-          clientSecret: clientCredentials.clientSecret,
+          clientId: clientCredentials.clientId,          
           extra: settings.extraTokenParameters,
           scope: settings.scope,
         ),
